@@ -6,8 +6,8 @@ $s3Client = new S3Client([
 'version' => 'latest',
 'region'  => 'ap-south-1',
 'credentials' => [
-'key'    => 'AKIAQFLZDLWZWEXWFKFS',     //Add your access key here
-'secret' => 'ULQXa0PrdseboXnz396IqDC1KL0CQVczAHsJoPr2'  //Add your secret key here
+'key'    => '********',     //Add your access key here
+'secret' => '********'  //Add your secret key here
 ]
 ]);
 // Check if the form was submitted
@@ -49,7 +49,7 @@ echo $cfurl;
 $name=$_POST["name"];
 $servername = "database-1.cjcoymc2o8xw.ap-south-1.rds.amazonaws.com";
 $username = "root";
-$password = "pass1234";
+$password = "********";
 $dbname = "facebook";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
