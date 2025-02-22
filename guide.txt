@@ -1,0 +1,17 @@
+1] Install php mysql connector in app tier servers, so that our php application can connect with database and can insert users data into it.
+
+2] create a folder named uploads, because in php code we have mapped our folder so that the users uploaded data will first come in this folder and then from here it will be inserted to s3, 
+so that no data will be lost due to internet connection or any other issues.And dont forget to give other users permission to write in this folder.
+
+3] Install composer which is a dependency manager for php , like pip is for python , npm is for nodejs, the same way composer works for php. Install aws-sdk using composer so that our php
+application can interact with the aws services like s3, rds, ec2 etc.
+
+4] The commands to install composer and aws-sdk using composer are : 
+
+sudo curl -sS https://getcomposer.org/installer | sudo php
+
+sudo mv composer.phar /usr/local/bin/composer
+
+sudo ln -s /usr/local/bin/composer /usr/bin/composer
+
+sudo composer require aws/aws-sdk-php
